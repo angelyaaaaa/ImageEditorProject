@@ -1,0 +1,32 @@
+.upload-area {
+    width: 433px;
+    height: 792px;
+    background-color: #f7f8fa;
+    border: 1px solid #dddee1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upload-header {
+    background-color: #eeeff3;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+.upload-user {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #d5dadf;
+    margin: 24px;
+}
+
+.upload-image {
+    width: 355px;
+    height: 156px;
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 10px;
+}
