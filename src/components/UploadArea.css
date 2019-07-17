@@ -2,7 +2,8 @@
     width: 433px;
     height: 792px;
     background-color: #f7f8fa;
-    border: 1px solid #dddee1;
+    /* border: 1px solid #dddee1; */
+    box-shadow: 12px 12px 7px #dddee1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,9 +25,31 @@
 }
 
 .upload-image {
+    /* height: 156px; */
+    min-height: 156px;
     width: 355px;
-    height: 156px;
-    background-color: #fff;
     margin-top: 50px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+.upload-image img {
+    /* height: 50px;
+    width: 50px; */
+    opacity: 0.5;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.before-upload {
+    background-color: #fff;
+}
+.after-upload {
+    background-color: #989396;
+}
+
+#file-uploader {
+    display: none;
 }
