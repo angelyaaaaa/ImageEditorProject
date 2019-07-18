@@ -1,3 +1,7 @@
+.hidden {
+    display: none;
+}
+
 .upload-area {
     width: 433px;
     height: 792px;
@@ -34,8 +38,9 @@
     align-items: center;
     justify-content: center;
     padding: 3px;
+    position: relative;
 }
-.upload-image img {
+.upload-image > img {
     /* height: 50px;
     width: 50px; */
     opacity: 0.5;
@@ -50,6 +55,24 @@
     background-color: #989396;
 }
 
-#file-uploader {
-    display: none;
+#canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.delete-button {
+    position: absolute;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+}
+.delete-button > img {
+    height: 40px;
+    width: 40px;
 }

@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Upload from './components/UploadArea';
 import Display from './components/DisplayArea';
 
-
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-        <Upload></Upload>
-        <Display></Display>
-    </div>
-  );
+const App = () => {
+    const [position, setPosition] = useState({
+        x: 0,
+        y: 0,
+        width: 0,
+        height: 0
+    })
+
+    return (
+        <div className="App">
+            <Upload setPosition={setPosition}></Upload>
+            <Display position={position}></Display>
+        </div>
+    );
 }
 
 export default App;
